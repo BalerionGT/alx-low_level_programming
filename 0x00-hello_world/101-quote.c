@@ -10,7 +10,7 @@ int main(void)
 	int i;
 	char s[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
 
-	for (i = 0; i < 57; i++)
+	for (i = 0; i < 58; i++)
 	{
 		putchar(s[i]);
 	}
