@@ -1,6 +1,6 @@
 #include<stdio.h>
 /**
- *main:the start point
+ *main - the start point
  *Description:print each size of each type of the variables in c
  *Return:return 0
  */
