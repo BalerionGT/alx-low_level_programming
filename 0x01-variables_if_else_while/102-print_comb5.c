@@ -6,16 +6,30 @@
  */
 int main(void)
 {
-	int i, j, k, l;
+	int i = 47, j, k, l;
 
-	for (i = 48 ; i < 58 ; i++)
+	while (i < 57)
 	{
-		for (j = 48 ; j < 58 ; j++)
+		i++;
+		j = 47;
+		while (j < i - 1)
 		{
-			for (k = i ; k < 58 ; k++)
+			j++;
+			k = 47;
+			while (k < 57)
 			{
-				for (l = j + 1 ; l < 58 ; l++)
+				k++;
+				if (k == 48 || k == 57)
 				{
+					l = j;
+				}
+				else
+				{
+					l = 47;
+				}
+				while (l < 57)
+				{
+					l++;
 					putchar(i);
 					putchar(j);
 					putchar(' ');
