@@ -8,7 +8,7 @@ void main(void)
 {
 	int i;
 
-	for (i = 1 ; i <= 100 ; i++)
+	for (i = 1 ; i <= 99 ; i++)
 	{
 		if (i % 3 == 0 && i % 5 == 0)
 		{
@@ -31,12 +31,12 @@ void main(void)
 				}
 				else
 				{
-					printf("%d",i);
+					printf("%d", i);
 					printf(" ");
 				}
 			}
 		}
-	printf("\n");
 	}
+	printf("Buzz");
 }
 
