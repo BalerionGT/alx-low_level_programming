@@ -34,12 +34,12 @@ void print_times_table(int n)
 					_putchar(' ');
 					_putchar(' ');
 				}
-				if (i * j < 100 && i * j >= 10)
+				if (i * j  < 100 && i * j >= 10)
 				{
 					_putchar(' ');
 					_putchar(' ');
 				}
-				if (i * j >= 100)
+				if (i * j  >= 100)
 				{
 					_putchar(' ');
 				}
