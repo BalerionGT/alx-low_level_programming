@@ -2,9 +2,9 @@
 /**
  * main - check the code
  *
- * Return:Nothing.
+ * Return: 0 always.
  */
-void main(void)
+int main(void)
 {
 	int i;
 
@@ -38,5 +38,7 @@ void main(void)
 		}
 	}
 	printf("Buzz");
+	printf("\n");
+	return (0);
 }
 
