@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdlib.h>
 /**
  * puts2 - check the code
  * @str: The string we want to print the half
