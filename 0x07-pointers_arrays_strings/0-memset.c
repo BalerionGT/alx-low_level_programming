@@ -11,8 +11,7 @@
 char *_memset(char *s, char b, unsigned int n)
 {
 	unsigned int i;
-	
-	s = (char *) malloc(n * sizeof(char));
+
 	for (i = 0; i < n; i++)
 	{
 		*(s + i) = b;
