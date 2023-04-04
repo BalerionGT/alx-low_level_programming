@@ -1,3 +1,5 @@
+#include <stdio.h>
+
 /**
  * print_diagsums - check body
  * @a: The square matrix of integers.
