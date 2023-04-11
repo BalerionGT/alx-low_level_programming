@@ -15,7 +15,6 @@ int main(int argc, char **argv)
 	{
 		printf("0\n");
 		j = 0;
-		return (1);
 	}
 	else
 	{
