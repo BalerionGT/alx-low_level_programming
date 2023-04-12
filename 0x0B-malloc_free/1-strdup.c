@@ -23,12 +23,10 @@ char *_strdup(char *str)
 	}
 	else
 	{
-		for (j = 0; j < i ; j++)
+		for (j = 0; j <= i ; j++)
 		{
 			c[j] = str[j];
 		}
-		c[i] = '\0';
 		return (c);
 	}
-	free(c);
 }
