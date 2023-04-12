@@ -3,28 +3,31 @@
 #include <stdlib.h>
 
 /**
- * main - check the code.
- *
+ * _strdup - check the code.
+ * @str: the string we want to copy
  * Return: a pointer
  */
 char *_strdup(char *str)
 {
-	int i = 0;
+	int i = 0, j;
 	char *c;
 
 	while (str[i] != '\0')
 	{
 		i++;
 	}
-	*c = (char) malloc((i + 1) * sizeof(char));
+	c = (char *) malloc((i + 1) * sizeof(char));
 	if (str == NULL)
 	{
 		return (NULL);
 	}
 	else
 	{
-		*c = *str;
+		for (j = 0; j < i ; j++)
+		{
+			c[j] = str[j];
+		}
 		return (c);
 	}
-	free (c);
+	free(c);
 }
