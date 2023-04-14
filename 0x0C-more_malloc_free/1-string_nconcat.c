@@ -31,7 +31,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		}
 		for (k = i; k < i + j + 1; k++)
 		{
-			p[k] = s2[k];
+			p[k] = s2[k - i];
 		}
 		p[i + j + 1] = '\0';
 	}
@@ -44,9 +44,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		}
 		for (k = i; k < i + n + 1; k++)
 		{
-			p[k] = s2[k];
+			p[k] = s2[k - i];
 		}
-		p[i + j + 1] = '\0';
+		p[i + n + 1] = '\0';
 	}
 	if (p == NULL)
 	{
