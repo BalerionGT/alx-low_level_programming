@@ -8,7 +8,7 @@
  */
 int is_prime_number(int n)
 {
-	int i;
+	int i = n;
 
 	if (n <= 1)
 	{
@@ -20,14 +20,6 @@ int is_prime_number(int n)
 	}
 	else
 	{
-		for (i = 2; i < n ; i++)
-		{
-			if (is_prime_number(i) == 1 && n % i == 0)
-			{
-				return (0);
-				break;
-			}
-		}
+		return ( is_prime_number(n - 1) == 1 && i % n -1 != 1);
 	}
-	return (1);
 }
