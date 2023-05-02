@@ -5,7 +5,7 @@
  * @head: the list we want to free
  *
  */
-void free_listint2(listint_t *head)
+void free_listint2(listint_t **head)
 {
 	listint_t *t;
 
