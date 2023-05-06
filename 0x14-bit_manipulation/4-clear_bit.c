@@ -2,22 +2,16 @@
 #include "main.h"
 
 /**
- * main - check the code
+ * clear_bit - check the code
+ * @n: pointer to a number
+ * @index: index of what is cleared
  *
- * Return: Always 0.
+ * Return: 1 sucess -1 fail
  */
-int main(void)
+int clear_bit(unsigned long int *n, unsigned int index)
 {
-    unsigned long int n;
-
-    n = 1024;
-    clear_bit(&n, 10);
-    printf("%lu\n", n);
-    n = 0;
-    clear_bit(&n, 10);
-    printf("%lu\n", n);
-    n = 98;
-    clear_bit(&n, 1);
-    printf("%lu\n", n);
-    return (0);
+	if (index > 63)
+		return (-1);
+	*n = (~(1UL << index) & *n);
+	return (1);
 }

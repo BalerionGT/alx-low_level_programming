@@ -1,22 +1,23 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
- * main - check the code
+ * flip_bits - check the code
+ * @n: the begining number
+ * @m: the second one
  *
- * Return: Always 0.
+ * Return: how many bits are changed
  */
-int main(void)
+unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-    unsigned int n;
+	int i, j = 0;
+	unsigned long int k;
+	unsigned long int x = n ^ m;
 
-    n = flip_bits(1024, 1);
-    printf("%u\n", n);
-    n = flip_bits(402, 98);
-    printf("%u\n", n);
-    n = flip_bits(1024, 3);
-    printf("%u\n", n);
-    n = flip_bits(1024, 1025);
-    printf("%u\n", n);
-    return (0);
+	for (i = 63; i >= 0; i--)
+	{
+		k = x >> i;
+		if (k & 1)
+			j++;
+	}
+	return (j);
 }
