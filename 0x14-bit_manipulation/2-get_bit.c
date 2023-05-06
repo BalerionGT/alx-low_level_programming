@@ -1,4 +1,4 @@
-#inlude "main.h"
+#include "main.h"
 
 /**
  * get_bit - check the code
